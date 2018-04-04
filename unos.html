@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Vježbe iz predmeta Programiranje web aplikacija">
+    <meta name="keywords" content="programiranje, web, aplikacije, servisi">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Unos članka</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="logo"><img src="images/earth.svg" alt="Zemlja"></a>
+                </li>
+
+                <li>
+                    <a href="index.html">Početna</a>
+                </li>
+
+                <li>
+                    <a href="onama.html">O nama</a>
+                </li>
+
+                <li>
+                    <a href="http://www.tvz.hr/">TVZ</a>
+                </li>
+				
+				<li>
+                    <a href="unos.html">Unesi novi članak</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <article class="centrirano">
+            <h2>
+                Unos novog članka
+            </h2>
+            <br>
+            <div>
+                <form name="clanak" action="skripta.php" method="POST">
+                    <label for="naslov">Naslov</label><br>
+                    <input id="naslov" type="text" name="naslov" />
+                    <br><br>
+
+                    <label for="sazetak">Kratki sadržaj</label><br>
+                    <textarea id="sazetak" name="sazetak"></textarea>
+                    <br><br>
+
+                    <label for="vijest">Tekst</label><br>
+                    <textarea id="vijest" name="vijest"></textarea>
+                    <br><br>
+
+                    <label for="kategorija">Kategorija</label><br>
+                    <select id="kategorija" name="kategorija">
+                        <option value="vijesti">Vijesti</option>
+                        <option value="sport">Sport</option>
+                        <option value="biznis">Biznis</option>
+                        <option value="kultura">Kultura</option>
+                    </select>
+                    <br><br>
+
+                    <label for="skriveno">Sakrij vijest</label>
+                    <input type="checkbox" id="skriveno" name="skriveno">
+                    <br><br>
+
+                    <input type="submit" value="Pošalji">
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; Velimir Lisec 2018, vlisec@tvz.hr. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
